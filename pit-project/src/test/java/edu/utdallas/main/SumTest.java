@@ -19,12 +19,12 @@ public class SumTest {
 	}
 
 	@Test
-	public void test1() {
+	public void test() {
 		assertEquals(convert(new int[] {0, 2}), convert(sum.twoSum(new int[] {2, 5, 9, 17, 20}, 11)));
 	}
 	
-	@Test
-	public void test2() {
-		assertEquals(convert(new int[] {1, 3}), convert(sum.twoSum(new int[] {2, 5, 9, 17, 20}, 22)));
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalArgumentException() {
+		sum.twoSum(new int[] {2, 5, 9, 17, 20}, 1);
 	}
 }
