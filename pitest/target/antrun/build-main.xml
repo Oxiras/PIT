@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <delete file="C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\target/pitest-1.4.0-SNAPSHOT.jar"/>
+</target>
+</project>
