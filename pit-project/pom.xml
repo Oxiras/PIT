@@ -22,10 +22,11 @@
 			<plugin>
 				<groupId>org.pitest</groupId>
 				<artifactId>pitest-maven</artifactId>
-				<version>1.3.2</version>
+				<version>1.4.0-SNAPSHOT</version>
 				<configuration>
 					<mutators>
-						<mutator>ALL</mutator>
+						<mutator>AOD_MUTATOR_FIRST</mutator>
+						<mutator>ROR</mutator>
 					</mutators>
 				</configuration>
 			</plugin>
