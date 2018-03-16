@@ -1,4 +1,16 @@
 # These are unneccessary to push
+
+pitest-entry/target/classes/*
+pitest-entry/target/test-classes/*
+
+pitest-maven/target/classes/*
+pitest-maven/target/test-classes/*
+
+pitest/target/test-classes/*
+pitest/target/test-classes/*
+
+*.class
+
 LICENSE.txt
 README copy.md
 code_cleanup_profile.xml
