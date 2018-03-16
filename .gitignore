@@ -1,3 +1,22 @@
+# These are unneccessary to push
+LICENSE.txt
+README copy.md
+code_cleanup_profile.xml
+code_format_profile.xml
+hackers_guide.txt
+perform_release.sh
+pitest-aggregator/
+pitest-ant/
+pitest-build-config/
+pitest-command-line/
+pitest-groovy-verification/
+pitest-html-report/
+pitest-java8-verification/
+pitest-maven-verification/
+pom.xml
+prepare_release.sh
+so_you_want_to_build_mutation_testing_system.md
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
