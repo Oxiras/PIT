@@ -15,15 +15,15 @@ import java.util.Map;
 /**
  * Mutator that replaces (a+b) (a-b) (a*b) (a%b) by a, it means that we remove the second operand;
  */
-public enum AODMutatorFirst implements MethodMutatorFactory {
+public enum AODMutator implements MethodMutatorFactory {
 
- AOD_MUTATOR_FIRST;
+ AOD_MUTATOR;
 
  @Override
  public MethodVisitor create(final MutationContext context,
                              final MethodInfo methodInfo,
                              final MethodVisitor methodVisitor)  {
-  return new AODMethodVisitorFirst(this, methodInfo, context, methodVisitor);
+  return new AODMethodVisitor1(this, methodInfo, context, methodVisitor);
  }
 
  public String getGloballyUniqueId()  {
@@ -34,8 +34,8 @@ public enum AODMutatorFirst implements MethodMutatorFactory {
   return name();
  }
 }
-class AODMethodVisitorFirst extends AbstractInsnMutator {
- AODMethodVisitorFirst(final MethodMutatorFactory factory,
+class AODMethodVisitor1 extends AbstractInsnMutator {
+ AODMethodVisitor1(final MethodMutatorFactory factory,
                        final MethodInfo methodInfo,
                        final MutationContext context,
                        final MethodVisitor writer) {

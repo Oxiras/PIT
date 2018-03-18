@@ -124,7 +124,6 @@ C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\fu
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\coverage\execute\CoverageDecorator.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\coverage\TestInfo.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\bytecode\FrameOptions.java
-C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\engine\gregor\mutators\AODMutatorFirst.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\testapi\execute\ResultType.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\execute\DefaultReporter.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\coverage\analysis\ArrayProbeCoverageMethodVisitor.java
@@ -181,6 +180,7 @@ C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mu
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\classinfo\ClassInfo.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\testapi\execute\containers\UnContainer.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\testapi\execute\Container.java
+C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\engine\gregor\mutators\AODMutator.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\junit\JUnitTestPlugin.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\sequence\Context.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\classpath\ClassPathRoot.java
@@ -203,6 +203,7 @@ C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\cl
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\classinfo\HashFunction.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\classpath\CodeSource.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\classinfo\ClassInfoSource.java
+C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\engine\gregor\mutators\AORMutator.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\classpath\PathFilter.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\coverage\analysis\AbstractCoverageStrategy.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\engine\gregor\mutators\ConstructorCallMutator.java

@@ -10,28 +10,114 @@ import org.pitest.mutationtest.engine.gregor.MethodInfo;
 import org.pitest.mutationtest.engine.gregor.MethodMutatorFactory;
 import org.pitest.mutationtest.engine.gregor.MutationContext;
 
-public enum RORMutator implements MethodMutatorFactory {
+public class RORMutator {
+    public enum RORMutator1 implements MethodMutatorFactory {
 
-    ROR_MUTATOR;
+        ROR_MUTATOR;
 
-    @Override
-    public MethodVisitor create(final MutationContext context, final MethodInfo methodInfo,
-            final MethodVisitor methodVisitor) {
-        return new RorMethodVisitor(this, context, methodVisitor);
+        @Override
+        public MethodVisitor create(final MutationContext context, final MethodInfo methodInfo,
+                final MethodVisitor methodVisitor) {
+            return new RorMethodVisitor1(this, context, methodVisitor);
+        }
+
+        @Override
+        public String getGloballyUniqueId() {
+            return this.getClass().getName();
+        }
+
+        @Override
+        public String getName() {
+            return name();
+        }
     }
+    
+    public enum RORMutator2 implements MethodMutatorFactory {
 
-    @Override
-    public String getGloballyUniqueId() {
-        return this.getClass().getName();
+        ROR_MUTATOR;
+
+        @Override
+        public MethodVisitor create(final MutationContext context, final MethodInfo methodInfo,
+                final MethodVisitor methodVisitor) {
+            return new RorMethodVisitor2(this, context, methodVisitor);
+        }
+
+        @Override
+        public String getGloballyUniqueId() {
+            return this.getClass().getName();
+        }
+
+        @Override
+        public String getName() {
+            return name();
+        }
     }
+    
+    public enum RORMutator3 implements MethodMutatorFactory {
 
-    @Override
-    public String getName() {
-        return name();
+        ROR_MUTATOR;
+
+        @Override
+        public MethodVisitor create(final MutationContext context, final MethodInfo methodInfo,
+                final MethodVisitor methodVisitor) {
+            return new RorMethodVisitor3(this, context, methodVisitor);
+        }
+
+        @Override
+        public String getGloballyUniqueId() {
+            return this.getClass().getName();
+        }
+
+        @Override
+        public String getName() {
+            return name();
+        }
+    }
+    
+    public enum RORMutator4 implements MethodMutatorFactory {
+
+        ROR_MUTATOR;
+
+        @Override
+        public MethodVisitor create(final MutationContext context, final MethodInfo methodInfo,
+                final MethodVisitor methodVisitor) {
+            return new RorMethodVisitor4(this, context, methodVisitor);
+        }
+
+        @Override
+        public String getGloballyUniqueId() {
+            return this.getClass().getName();
+        }
+
+        @Override
+        public String getName() {
+            return name();
+        }
+    }
+    
+    public enum RORMutator5 implements MethodMutatorFactory {
+
+        ROR_MUTATOR;
+
+        @Override
+        public MethodVisitor create(final MutationContext context, final MethodInfo methodInfo,
+                final MethodVisitor methodVisitor) {
+            return new RorMethodVisitor5(this, context, methodVisitor);
+        }
+
+        @Override
+        public String getGloballyUniqueId() {
+            return this.getClass().getName();
+        }
+
+        @Override
+        public String getName() {
+            return name();
+        }
     }
 }
 
-class RorMethodVisitor extends AbstractJumpMutator {
+class RorMethodVisitor1 extends AbstractJumpMutator {
 
     //private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
@@ -39,44 +125,164 @@ class RorMethodVisitor extends AbstractJumpMutator {
     static {
         // Equal
         MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '=' with '!='."));
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '=' with '>='."));
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '=' with '>'."));
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '=' with '<='."));
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '=' with '<'."));
         
         // Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '!=' with '='."));
-        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '!=' with '>='."));
-        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '!=' with '>'."));
-        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '!=' with '<='."));
-        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '!=' with '<'."));
         
         // Greater Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>=' with '='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>=' with '!='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '>=' with '>'."));
-        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>=' with '<='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>=' with '<'."));
         
         // Greater Than
         MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>' with '='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>' with '!='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '>' with '>='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>' with '<='."));
-        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>' with '<'."));
         
         // Less Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<=' with '='."));
-        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '<=' with '!='."));
-        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '<=' with '>='."));
-        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '<=' with '>'."));
-        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '<=' with '<'."));
         
         // Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<' with '='."));
+    }
+
+    @Override
+    protected Map<Integer, Substitution> getMutations() {
+        return MUTATIONS;
+    }
+
+    RorMethodVisitor1(final MethodMutatorFactory factory, final MutationContext context,
+            final MethodVisitor delegateMethodVisitor) {
+        super(factory, context, delegateMethodVisitor);
+    }
+}
+
+class RorMethodVisitor2 extends AbstractJumpMutator {
+
+    //private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+    private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+
+    static {
+        // Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '=' with '>='."));
+        
+        // Not Equal
+        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '!=' with '>='."));
+        
+        // Greater Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>=' with '!='."));
+        
+        // Greater Than
+        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>' with '!='."));
+        
+        // Less Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '<=' with '!='."));
+        
+        // Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '<' with '!='."));
+    }
+
+    @Override
+    protected Map<Integer, Substitution> getMutations() {
+        return MUTATIONS;
+    }
+
+    RorMethodVisitor2(final MethodMutatorFactory factory, final MutationContext context,
+            final MethodVisitor delegateMethodVisitor) {
+        super(factory, context, delegateMethodVisitor);
+    }
+}
+
+class RorMethodVisitor3 extends AbstractJumpMutator {
+
+    //private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+    private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+
+    static {
+        // Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '=' with '>'."));
+        
+        // Not Equal
+        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '!=' with '>'."));
+        
+        // Greater Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '>=' with '>'."));
+        
+        // Greater Than
+        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '>' with '>='."));
+        
+        // Less Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '<=' with '>='."));
+        
+        // Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '<' with '>='."));
+    }
+
+    @Override
+    protected Map<Integer, Substitution> getMutations() {
+        return MUTATIONS;
+    }
+
+    RorMethodVisitor3(final MethodMutatorFactory factory, final MutationContext context,
+            final MethodVisitor delegateMethodVisitor) {
+        super(factory, context, delegateMethodVisitor);
+    }
+}
+
+class RorMethodVisitor4 extends AbstractJumpMutator {
+
+    //private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+    private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+
+    static {
+        // Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '=' with '<='."));
+        
+        // Not Equal
+        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '!=' with '<='."));
+        
+        // Greater Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>=' with '<='."));
+        
+        // Greater Than
+        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>' with '<='."));
+
+        // Less Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '<=' with '>'."));
+        
+        // Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '<' with '>'."));
+    }
+
+    @Override
+    protected Map<Integer, Substitution> getMutations() {
+        return MUTATIONS;
+    }
+
+    RorMethodVisitor4(final MethodMutatorFactory factory, final MutationContext context,
+            final MethodVisitor delegateMethodVisitor) {
+        super(factory, context, delegateMethodVisitor);
+    }
+}
+
+class RorMethodVisitor5 extends AbstractJumpMutator {
+
+    //private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+    private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
+
+    static {
+        // Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '=' with '<'."));
+        
+        // Not Equal
+        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '!=' with '<'."));
+        
+        // Greater Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>=' with '<'."));
+        
+        // Greater Than
+        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>' with '<'."));
+        
+        // Less Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '<=' with '<'."));
+        
+        // Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '<' with '<='."));
     }
 
@@ -85,7 +291,7 @@ class RorMethodVisitor extends AbstractJumpMutator {
         return MUTATIONS;
     }
 
-    RorMethodVisitor(final MethodMutatorFactory factory, final MutationContext context,
+    RorMethodVisitor5(final MethodMutatorFactory factory, final MutationContext context,
             final MethodVisitor delegateMethodVisitor) {
         super(factory, context, delegateMethodVisitor);
     }
