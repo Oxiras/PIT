@@ -196,9 +196,9 @@ public final class Mutator {
 
         add("AOR2", AORMutator.MathMutator2.AOR_MUTATOR);
 
-        add("AOR3", AORMutator.MathMutator2.AOR_MUTATOR);
+        add("AOR3", AORMutator.MathMutator3.AOR_MUTATOR);
         
-        add("AOR4", AORMutator.MathMutator2.AOR_MUTATOR);
+        add("AOR4", AORMutator.MathMutator4.AOR_MUTATOR);
     }
 
     public static Collection<MethodMutatorFactory> all() {

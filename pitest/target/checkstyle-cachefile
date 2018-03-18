@@ -1,4 +1,4 @@
-#Sun Mar 18 12:32:26 CDT 2018
+#Sun Mar 18 12:53:33 CDT 2018
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\testapi\\TestListener.java=1521231164628
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\MethodMutationContext.java=1521231164503
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\execute\\MutationTestWorker.java=1521231164534
@@ -42,7 +42,7 @@ C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classinfo\\Repository.java=1521231164409
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classinfo\\ClassInfoSource.java=1521231164409
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\util\\Log.java=1521231164659
-C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\config\\Mutator.java=1521394058202
+C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\config\\Mutator.java=1521395548525
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\reflection\\Reflection.java=1521231164612
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\functional\\prelude\\Prelude.java=1521231164472
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\ZeroOperandMutation.java=1521231164503
@@ -209,7 +209,6 @@ C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\util\\SafeDataInputStream.java=1521231164675
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\mutators\\experimental\\RemoveSwitchMutator.java=1521231164534
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classpath\\DirectoryClassPathRoot.java=1521231164425
-C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\mutators\\courseProject\\AODMutatorFirst.java=1521231164534
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\coverage\\analysis\\LineMapper.java=1521231164440
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classpath\\ClassPathByteArraySource.java=1521231164425
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\sequence\\QueryStart.java=1521231164612

@@ -268,7 +268,6 @@ org\pitest\mutationtest\execute\MutationTestWorker.class
 org\pitest\mutationtest\engine\gregor\mutators\MathMutator.class
 org\pitest\testapi\execute\ResultType.class
 org\pitest\classinfo\ClassInfoVisitor$ClassAnnotationValueVisitor$1.class
-org\pitest\mutationtest\engine\gregor\mutators\courseProject\AODMutatorFirst.class
 org\pitest\testng\TestNGConfiguration.class
 sun\pitest\InvokeReceiver.class
 org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor5.class
@@ -335,7 +334,6 @@ org\pitest\sequence\SequenceQuery$Partial.class
 org\pitest\testapi\execute\Container.class
 org\pitest\mutationtest\engine\gregor\config\DefaultMutationEngineConfiguration.class
 org\pitest\classinfo\MethodFilteringAdapter.class
-org\pitest\mutationtest\engine\gregor\mutators\courseProject\AODMethodVisitorFirst.class
 org\pitest\sequence\Slot.class
 org\pitest\testapi\TestGroupConfig.class
 org\pitest\plugin\FeatureSetting.class
