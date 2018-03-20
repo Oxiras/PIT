@@ -99,6 +99,7 @@ org\pitest\sequence\SequenceQuery$Concat.class
 org\pitest\testapi\execute\Pitest.class
 org\pitest\testapi\execute\MultipleTestGroup.class
 org\pitest\testng\MutableTestListenerWrapper.class
+org\pitest\mutationtest\engine\gregor\mutators\AODMutator$AODMutator2.class
 org\pitest\functional\predicate\False.class
 org\pitest\mutationtest\engine\gregor\mutators\AODMutator.class
 org\pitest\testapi\TestResult.class
@@ -235,6 +236,7 @@ org\pitest\mutationtest\engine\gregor\ClassInfo.class
 org\pitest\mutationtest\engine\gregor\mutators\BooleanFalseMethodVisitor$1.class
 org\pitest\mutationtest\engine\gregor\mutators\BooleanTrueMethodVisitor$1.class
 org\pitest\mutationtest\engine\gregor\mutators\MathMethodVisitorC2.class
+org\pitest\mutationtest\engine\gregor\mutators\AODMutator$AODMutator1.class
 org\pitest\coverage\execute\CoverageDecorator.class
 org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator3.class
 org\pitest\plugin\FeatureSelector.class
@@ -297,6 +299,7 @@ org\pitest\mutationtest\engine\gregor\mutators\experimental\NakedReceiverMutator
 org\pitest\mutationtest\engine\gregor\mutators\experimental\RemoveIncrementsMutator.class
 org\pitest\mutationtest\engine\gregor\mutators\AReturnMethodVisitor$7.class
 org\pitest\mutationtest\engine\gregor\mutators\AORMutator$MathMutator2.class
+org\pitest\mutationtest\engine\gregor\mutators\AODMethodVisitor2.class
 org\pitest\mutationtest\mocksupport\BendJavassistToMyWillTransformer.class
 org\pitest\mutationtest\engine\gregor\mutators\PrimitivesReturnValsMethodVisitor.class
 org\pitest\classinfo\ComputeClassWriter.class

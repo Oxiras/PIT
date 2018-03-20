@@ -123,23 +123,23 @@ class RorMethodVisitor1 extends AbstractJumpMutator {
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
 
     static {
-        // Equal
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '=' with '!='."));
+        // Equal with Not Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '==' with '!='."));
         
-        // Not Equal
-        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '!=' with '='."));
+        // Not Equal with Equal
+        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '!=' with '=='."));
         
-        // Greater Than or Equal
-        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>=' with '='."));
+        // Greater Than or Equal with Equal
+        MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>=' with '=='."));
         
-        // Greater Than
-        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>' with '='."));
+        // Greater Than with Equal
+        MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>' with '=='."));
         
-        // Less Than or Equal
-        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<=' with '='."));
+        // Less Than or Equal with Equal
+        MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<=' with '=='."));
         
-        // Less Than
-        MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<' with '='."));
+        // Less Than with Equal
+        MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<' with '=='."));
     }
 
     @Override
@@ -159,22 +159,22 @@ class RorMethodVisitor2 extends AbstractJumpMutator {
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
 
     static {
-        // Equal
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '=' with '>='."));
+        // Equal with Greater Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '==' with '>='."));
         
-        // Not Equal
+        // Not Equal with Greater Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '!=' with '>='."));
         
-        // Greater Than or Equal
+        // Greater Than or Equal with Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>=' with '!='."));
         
-        // Greater Than
+        // Greater Than with Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>' with '!='."));
         
-        // Less Than or Equal
+        // Less Than or Equal with Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '<=' with '!='."));
         
-        // Less Than
+        // Less Than with Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '<' with '!='."));
     }
 
@@ -195,22 +195,22 @@ class RorMethodVisitor3 extends AbstractJumpMutator {
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
 
     static {
-        // Equal
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '=' with '>'."));
+        // Equal with Greater Than
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '==' with '>'."));
         
-        // Not Equal
+        // Not Equal with Greater Than
         MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '!=' with '>'."));
         
-        // Greater Than or Equal
+        // Greater Than or Equal with Greater Than
         MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '>=' with '>'."));
         
-        // Greater Than
+        // Greater Than with Greater Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '>' with '>='."));
         
-        // Less Than or Equal
+        // Less Than or Equal with Greater Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '<=' with '>='."));
         
-        // Less Than
+        // Less Than with Greater Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '<' with '>='."));
     }
 
@@ -231,22 +231,22 @@ class RorMethodVisitor4 extends AbstractJumpMutator {
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
 
     static {
-        // Equal
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '=' with '<='."));
+        // Equal with Less Than or Equal
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '==' with '<='."));
         
-        // Not Equal
+        // Not Equal with Less Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '!=' with '<='."));
         
-        // Greater Than or Equal
+        // Greater Than or Equal with Less Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>=' with '<='."));
         
-        // Greater Than
+        // Greater Than with Less Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>' with '<='."));
 
-        // Less Than or Equal
+        // Less Than or Equal with Greater Than
         MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '<=' with '>'."));
         
-        // Less Than
+        // Less Than with Greater Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '<' with '>'."));
     }
 
@@ -267,22 +267,22 @@ class RorMethodVisitor5 extends AbstractJumpMutator {
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
 
     static {
-        // Equal
-        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '=' with '<'."));
+        // Equal with Less Than
+        MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '==' with '<'."));
         
-        // Not Equal
+        // Not Equal with Less Than
         MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '!=' with '<'."));
         
-        // Greater Than or Equal
+        // Greater Than or Equal with Less Than
         MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>=' with '<'."));
         
-        // Greater Than
+        // Greater Than with Less Than
         MUTATIONS.put(Opcodes.IF_ICMPGT, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>' with '<'."));
         
-        // Less Than or Equal
+        // Less Than or Equal with Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '<=' with '<'."));
         
-        // Less Than
+        // Less Than with Less Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '<' with '<='."));
     }
 

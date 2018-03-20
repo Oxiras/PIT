@@ -26,6 +26,7 @@
 				<configuration>
 					<mutators>
 						<mutator>AOD1</mutator>
+						<mutator>AOD2</mutator>
 						<mutator>ROR1</mutator>
 						<mutator>ROR2</mutator>
 						<mutator>ROR3</mutator>
