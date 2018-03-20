@@ -180,7 +180,9 @@ public final class Mutator {
         addGroup("ALL", all());
         addGroup("NEW_DEFAULTS", newDefaults());
 
-        add("AOD1", AODMutator.AOD_MUTATOR);
+        add("AOD1", AODMutator.AODMutator1.AOD_MUTATOR);
+        
+        add("AOD2", AODMutator.AODMutator2.AOD_MUTATOR);
 
         add("ROR1", RORMutator.RORMutator1.ROR_MUTATOR);
         
