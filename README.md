@@ -1,24 +1,14 @@
-# PIT
+# PIT Augmentation Project
 
+Project Goals
+This project augmented the <a href="https://github.com/hcoles/pitest">PIT Mutation Tool</a> with three additional mutators:
+- Arithmetic operation deletion
+- Arithmetic operator replacement
+- Relation operator replacement
 
-USAGE
-1. Navigate to main project directory: ../pit-project
-2. Execute following command: mvn org.pitest:pitest-maven:mutationCoverage
-
-
-STEP BY STEP:
-1. Clone pitest from : https://github.com/hcoles/pitest
-2. Assume we already had maven installed. Then go to the main directory of cloned folder, run command:
-	 mvn clean install -DskipTests
-	 // This to install, and also generate 1.4.0-SNAPSHOT as well
-3. Copy pit-project (which we created) to this main directory
-4. Go to our pit-project directory and run :  mvn org.pitest:pitest-maven:mutationCoverage
-  => We can get the desired result
-By this way, we do not need to change anything in POM file.
-
-
-Everytime we edit java files in pitest, we need to run again: 
- 	mvn clean install -DskipTests 
-then
-	mvn org.pitest:pitest-maven:mutationCoverage
-
+Instructions
+1. Clone repository to your local machine.
+2. Navigate to subdirectory /PIT/pitest of newly clone folder.
+3. Run following command: mvn clean install -DskipTests.
+4. Navigate to the sample project folder location.
+5. Run following command: mvn org.pitest:pitest-maven:mutationCoverage.
