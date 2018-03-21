@@ -223,12 +223,13 @@ class AODMethodVisitor2 extends MethodVisitor {
  private void replaceOperator(int opcode, String message, int type) {
    final MutationIdentifier muID = this.context.registerMutation(factory, message);
    if (this.context.shouldMutate(muID)) {
-     super.visitInsn(Opcodes.SWAP);
-     
      if (type == 1) {
-       super.visitInsn(Opcodes.POP);
+        super.visitInsn(Opcodes.SWAP);
+        super.visitInsn(Opcodes.POP);
      } else { 
-       super.visitInsn(Opcodes.POP2);
+        super.visitInsn(Opcodes.DUP2_X2);
+        super.visitInsn(Opcodes.POP2);     
+        super.visitInsn(Opcodes.POP2);
      }
      
     } else {
