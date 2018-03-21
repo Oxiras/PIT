@@ -179,28 +179,24 @@ public final class Mutator {
         addGroup("STRONGER", stronger());
         addGroup("ALL", all());
         addGroup("NEW_DEFAULTS", newDefaults());
+        addGroup("AUGMENTS", augments());
+    }
 
-        add("AOD1", AODMutator.AODMutator1.AOD_MUTATOR);
-        
-        add("AOD2", AODMutator.AODMutator2.AOD_MUTATOR);
-
-        add("ROR1", RORMutator.RORMutator1.ROR_MUTATOR);
-        
-        add("ROR2", RORMutator.RORMutator2.ROR_MUTATOR);
-        
-        add("ROR3", RORMutator.RORMutator3.ROR_MUTATOR);
-        
-        add("ROR4", RORMutator.RORMutator4.ROR_MUTATOR);
-        
-        add("ROR5", RORMutator.RORMutator5.ROR_MUTATOR);
-
-        add("AOR1", AORMutator.MathMutator1.AOR_MUTATOR);
-
-        add("AOR2", AORMutator.MathMutator2.AOR_MUTATOR);
-
-        add("AOR3", AORMutator.MathMutator3.AOR_MUTATOR);
-        
-        add("AOR4", AORMutator.MathMutator4.AOR_MUTATOR);
+    public static Collection<MethodMutatorFactory> augments() {
+        return group(
+                AODMutator.AODMutator1.AOD_MUTATOR,
+                AODMutator.AODMutator2.AOD_MUTATOR,
+                RORMutator.RORMutator1.ROR_MUTATOR,
+                RORMutator.RORMutator2.ROR_MUTATOR,
+                RORMutator.RORMutator3.ROR_MUTATOR,
+                RORMutator.RORMutator4.ROR_MUTATOR,
+                RORMutator.RORMutator5.ROR_MUTATOR,
+                RORMutator.RORMutator6.ROR_MUTATOR,
+                AORMutator.MathMutator1.AOR_MUTATOR,
+                AORMutator.MathMutator2.AOR_MUTATOR,
+                AORMutator.MathMutator3.AOR_MUTATOR,
+                AORMutator.MathMutator4.AOR_MUTATOR
+                );
     }
 
     public static Collection<MethodMutatorFactory> all() {

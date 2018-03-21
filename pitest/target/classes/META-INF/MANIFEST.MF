@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: Oxiras
+Build-Jdk: 9.0.4
+Implementation-Title: pitest
+Implementation-Version: 1.4.0-SNAPSHOT
+Implementation-Vendor-Id: org.pitest
+Implementation-Vendor: org.pitest
+Created-By: Maven Integration for Eclipse
+
