@@ -31,6 +31,7 @@ org\pitest\mutationtest\engine\gregor\GregorMutationEngine.class
 org\pitest\mutationtest\mocksupport\JavassistInputStreamInterceptorMethodVisitor.class
 org\pitest\mutationtest\build\PercentAndConstantTimeoutStrategy.class
 org\pitest\boot\HotSwapAgent.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor6.class
 org\pitest\mutationtest\engine\Mutant.class
 org\pitest\mutationtest\engine\gregor\mutators\RemoveConditionalMutator$Choice.class
 org\pitest\classinfo\FixedSizeHashMap.class
@@ -111,6 +112,7 @@ org\pitest\help\PitHelpError.class
 org\pitest\mutationtest\engine\gregor\MutatingClassVisitor.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\NakedReceiverMutator$ReplaceMethodCallWithObjectVisitor.class
 org\pitest\coverage\analysis\LineMapper.class
+org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator6.class
 org\pitest\mutationtest\engine\gregor\mutators\BooleanFalseReturnValsMutator.class
 org\pitest\mutationtest\engine\gregor\mutators\ConditionalsBoundaryMutator.class
 org\pitest\testapi\Configuration.class
