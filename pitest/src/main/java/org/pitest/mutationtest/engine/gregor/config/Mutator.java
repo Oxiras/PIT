@@ -173,6 +173,19 @@ public final class Mutator {
          * Experimental mutator that replaces method call with this
          */
         add("EXPERIMENTAL_NAKED_RECEIVER", NakedReceiverMutator.NAKED_RECEIVER);
+        
+        add("AOD1", AODMutator.AODMutator1.AOD_MUTATOR);
+        add("AOD2", AODMutator.AODMutator2.AOD_MUTATOR);
+        add("AOR1", AORMutator.MathMutator1.AOR_MUTATOR);
+        add("AOR2", AORMutator.MathMutator2.AOR_MUTATOR);
+        add("AOR3", AORMutator.MathMutator3.AOR_MUTATOR);
+        add("AOR4", AORMutator.MathMutator4.AOR_MUTATOR);
+        add("ROR1", RORMutator.RORMutator1.ROR_MUTATOR);
+        add("ROR2", RORMutator.RORMutator2.ROR_MUTATOR);
+        add("ROR3", RORMutator.RORMutator3.ROR_MUTATOR);
+        add("ROR4", RORMutator.RORMutator4.ROR_MUTATOR);
+        add("ROR5", RORMutator.RORMutator5.ROR_MUTATOR);
+        add("ROR6", RORMutator.RORMutator6.ROR_MUTATOR);
 
         addGroup("REMOVE_SWITCH", RemoveSwitchMutator.makeMutators());
         addGroup("DEFAULTS", defaults());
