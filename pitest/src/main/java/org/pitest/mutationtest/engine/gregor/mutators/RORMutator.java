@@ -176,7 +176,7 @@ class RorMethodVisitor2 extends AbstractJumpMutator {
 
     static {
         // Not Equal with Greater Than or Equal
-        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '==' with '=='."));
+        MUTATIONS.put(Opcodes.IF_ICMPNE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '==' with '!='."));
 
         // Greater Than or Equal with Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPGE, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '<' with '!='."));
