@@ -142,7 +142,7 @@ class RorMethodVisitor1 extends AbstractJumpMutator {
 
     private static final Map<Integer, Substitution> MUTATIONS = new HashMap<>();
 
-    static {
+    static {     
         // Not Equal with Equal
         MUTATIONS.put(Opcodes.IF_ICMPEQ, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '!=' with '=='."));
 
@@ -157,6 +157,12 @@ class RorMethodVisitor1 extends AbstractJumpMutator {
 
         // Greater Than or Equal with Equal
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPNE, "ROR Mutator: Replaced '>=' with '=='."));
+        
+        MUTATIONS.put(Opcodes.IFEQ, new Substitution(Opcodes.IFNE, "ROR Mutator: Replaced '!=' with '=='."));
+        MUTATIONS.put(Opcodes.IFGE, new Substitution(Opcodes.IFNE, "ROR Mutator: Replaced '<' with '=='."));
+        MUTATIONS.put(Opcodes.IFGT, new Substitution(Opcodes.IFNE, "ROR Mutator: Replaced '<=' with '=='."));
+        MUTATIONS.put(Opcodes.IFLE, new Substitution(Opcodes.IFNE, "ROR Mutator: Replaced '>' with '=='."));
+        MUTATIONS.put(Opcodes.IFLT, new Substitution(Opcodes.IFNE, "ROR Mutator: Replaced '>=' with '=='."));
     }
 
     RorMethodVisitor1(final MethodMutatorFactory factory, final MutationContext context,
@@ -189,6 +195,12 @@ class RorMethodVisitor2 extends AbstractJumpMutator {
 
         // Greater Than or Equal with Not Equal
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPEQ, "ROR Mutator: Replaced '>=' with '!='."));
+        
+        MUTATIONS.put(Opcodes.IFNE, new Substitution(Opcodes.IFEQ, "ROR Mutator: Replaced '==' with '!='."));
+        MUTATIONS.put(Opcodes.IFGE, new Substitution(Opcodes.IFEQ, "ROR Mutator: Replaced '<' with '!='."));
+        MUTATIONS.put(Opcodes.IFGT, new Substitution(Opcodes.IFEQ, "ROR Mutator: Replaced '<=' with '!='."));
+        MUTATIONS.put(Opcodes.IFLE, new Substitution(Opcodes.IFEQ, "ROR Mutator: Replaced '>' with '!='."));
+        MUTATIONS.put(Opcodes.IFLT, new Substitution(Opcodes.IFEQ, "ROR Mutator: Replaced '>=' with '!='."));
     }
 
     @Override
@@ -221,6 +233,12 @@ class RorMethodVisitor3 extends AbstractJumpMutator {
 
         // Greater Than or Equal with Less Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPGE, "ROR Mutator: Replaced '>=' with '<'."));
+        
+        MUTATIONS.put(Opcodes.IFEQ, new Substitution(Opcodes.IFGE, "ROR Mutator: Replaced '!=' with '<'."));
+        MUTATIONS.put(Opcodes.IFNE, new Substitution(Opcodes.IFGE, "ROR Mutator: Replaced '==' with '<'."));
+        MUTATIONS.put(Opcodes.IFGT, new Substitution(Opcodes.IFGE, "ROR Mutator: Replaced '<=' with '<'."));
+        MUTATIONS.put(Opcodes.IFLE, new Substitution(Opcodes.IFGE, "ROR Mutator: Replaced '>' with '<'."));
+        MUTATIONS.put(Opcodes.IFLT, new Substitution(Opcodes.IFGE, "ROR Mutator: Replaced '>=' with '<'."));
     }
 
     RorMethodVisitor3(final MethodMutatorFactory factory, final MutationContext context,
@@ -253,6 +271,12 @@ class RorMethodVisitor4 extends AbstractJumpMutator {
 
         // Greater Than or Equal with Less Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPGT, "ROR Mutator: Replaced '>=' with '<='."));
+        
+        MUTATIONS.put(Opcodes.IFEQ, new Substitution(Opcodes.IFGT, "ROR Mutator: Replaced '!=' with '<='."));
+        MUTATIONS.put(Opcodes.IFNE, new Substitution(Opcodes.IFGT, "ROR Mutator: Replaced '==' with '<='."));
+        MUTATIONS.put(Opcodes.IFGE, new Substitution(Opcodes.IFGT, "ROR Mutator: Replaced '<' with '<='."));
+        MUTATIONS.put(Opcodes.IFLE, new Substitution(Opcodes.IFGT, "ROR Mutator: Replaced '>' with '<='."));
+        MUTATIONS.put(Opcodes.IFLT, new Substitution(Opcodes.IFGT, "ROR Mutator: Replaced '>=' with '<='."));
     }
 
     RorMethodVisitor4(final MethodMutatorFactory factory, final MutationContext context,
@@ -285,6 +309,12 @@ class RorMethodVisitor5 extends AbstractJumpMutator {
 
         // Greater Than or Equal with Greater Than
         MUTATIONS.put(Opcodes.IF_ICMPLT, new Substitution(Opcodes.IF_ICMPLE, "ROR Mutator: Replaced '>=' with '>'."));
+        
+        MUTATIONS.put(Opcodes.IFEQ, new Substitution(Opcodes.IFLE, "ROR Mutator: Replaced '!=' with '>'."));
+        MUTATIONS.put(Opcodes.IFNE, new Substitution(Opcodes.IFLE, "ROR Mutator: Replaced '==' with '>'."));
+        MUTATIONS.put(Opcodes.IFGE, new Substitution(Opcodes.IFLE, "ROR Mutator: Replaced '<' with '>'."));
+        MUTATIONS.put(Opcodes.IFGT, new Substitution(Opcodes.IFLE, "ROR Mutator: Replaced '<=' with '>'."));
+        MUTATIONS.put(Opcodes.IFLT, new Substitution(Opcodes.IFLE, "ROR Mutator: Replaced '>=' with '>'."));
     }
 
     RorMethodVisitor5(final MethodMutatorFactory factory, final MutationContext context,
@@ -317,6 +347,12 @@ class RorMethodVisitor6 extends AbstractJumpMutator {
 
         // Greater Than with Greater Than or Equal
         MUTATIONS.put(Opcodes.IF_ICMPLE, new Substitution(Opcodes.IF_ICMPLT, "ROR Mutator: Replaced '>' with '>='."));
+        
+        MUTATIONS.put(Opcodes.IFEQ, new Substitution(Opcodes.IFLT, "ROR Mutator: Replaced '!=' with '>='."));
+        MUTATIONS.put(Opcodes.IFNE, new Substitution(Opcodes.IFLT, "ROR Mutator: Replaced '==' with '>='."));
+        MUTATIONS.put(Opcodes.IFGE, new Substitution(Opcodes.IFLT, "ROR Mutator: Replaced '<' with '>='."));
+        MUTATIONS.put(Opcodes.IFGT, new Substitution(Opcodes.IFLT, "ROR Mutator: Replaced '<=' with '>='."));
+        MUTATIONS.put(Opcodes.IFLE, new Substitution(Opcodes.IFLT, "ROR Mutator: Replaced '>' with '>='."));
     }
 
     RorMethodVisitor6(final MethodMutatorFactory factory, final MutationContext context,
