@@ -1,4 +1,4 @@
-#Mon Apr 16 19:40:03 CDT 2018
+#Mon Apr 16 20:58:08 CDT 2018
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\testapi\\TestListener.java=1521509569408
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\MethodMutationContext.java=1521509569330
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\execute\\MutationTestWorker.java=1521509569377
@@ -42,7 +42,7 @@ C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classinfo\\Repository.java=1521509569228
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classinfo\\ClassInfoSource.java=1521509569212
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\util\\Log.java=1521509569424
-C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\config\\Mutator.java=1523924397872
+C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\config\\Mutator.java=1523930255749
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\reflection\\Reflection.java=1521509569392
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\functional\\prelude\\Prelude.java=1521509569289
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\ZeroOperandMutation.java=1521509569330
@@ -171,6 +171,7 @@ C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\testapi\\TestGroupConfig.java=1521509569408
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\AvoidStringSwitchedMethodAdapter.java=1521509569314
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\classinfo\\CachingByteArraySource.java=1521509569212
+C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\mutationtest\\engine\\gregor\\mutators\\UORMutator.java=1523929982947
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\coverage\\BlockLocation.java=1521509569243
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\sequence\\SequenceQuery.java=1521509569392
 C\:\\Users\\Oxiras.DEUS\\eclipse-workspace\\pitest\\pitest\\src\\main\\java\\org\\pitest\\functional\\F5.java=1521509569274

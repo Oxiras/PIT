@@ -17,6 +17,7 @@ org\pitest\mutationtest\engine\gregor\mutators\AORMutator.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\RemoveSwitchMutator$RemoveSwitchMethodVisitor.class
 org\pitest\mutationtest\engine\gregor\mutators\MethodCallMethodVisitor.class
 org\pitest\extension\common\CompoundTestSuiteFinder.class
+org\pitest\mutationtest\engine\gregor\mutators\UorMethodVisitorRemove.class
 org\pitest\mutationtest\engine\gregor\ClassContext.class
 org\pitest\mutationtest\engine\gregor\mutators\AORMutator$MathMutator1.class
 org\pitest\util\StreamUtil.class
@@ -114,6 +115,7 @@ org\pitest\mutationtest\engine\gregor\mutators\experimental\NakedReceiverMutator
 org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorNE.class
 org\pitest\coverage\analysis\LineMapper.class
 org\pitest\mutationtest\engine\gregor\mutators\BooleanFalseReturnValsMutator.class
+org\pitest\mutationtest\engine\gregor\mutators\UorMethodVisitorDecrement.class
 org\pitest\mutationtest\engine\gregor\mutators\ConditionalsBoundaryMutator.class
 org\pitest\testapi\Configuration.class
 org\pitest\classpath\ClassPathByteArraySource.class
@@ -168,7 +170,9 @@ org\pitest\classpath\ClassPath.class
 org\pitest\mutationtest\engine\gregor\mutators\ConditionalsBoundaryMethodVisitor.class
 org\pitest\mutationtest\EngineArguments.class
 org\pitest\classpath\CompoundClassPathRoot.class
+org\pitest\mutationtest\engine\gregor\mutators\UorMethodVisitorIncrement.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\RemoveIncrementsMethodVisitor.class
+org\pitest\mutationtest\engine\gregor\mutators\UORMutator.class
 org\pitest\mutationtest\mocksupport\JavassistInterceptor.class
 org\pitest\mutationtest\MutationEngineFactory.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\ReturnValuesMutator.class
@@ -231,6 +235,7 @@ org\pitest\mutationtest\engine\gregor\mutators\RORMutator.class
 org\pitest\mutationtest\engine\gregor\config\Mutator.class
 org\pitest\testng\FailureTracker.class
 org\pitest\junit\TestInfo.class
+org\pitest\mutationtest\engine\gregor\mutators\UORMutator$Type.class
 org\pitest\mutationtest\engine\gregor\mutators\AODMethodVisitor1.class
 org\pitest\classinfo\ClassInfo.class
 org\pitest\classinfo\ClassInfoSource.class
@@ -288,6 +293,7 @@ org\pitest\testapi\Description.class
 org\pitest\mutationtest\config\MinionSettings.class
 org\pitest\plugin\ToggleStatus.class
 org\pitest\junit\JUnitVersion.class
+org\pitest\mutationtest\engine\gregor\mutators\UorMethodVisitorReverse.class
 org\pitest\mutationtest\engine\gregor\analysis\DefaultInstructionCounter.class
 org\pitest\classpath\ArchiveClassPathRoot.class
 org\pitest\mutationtest\engine\gregor\mutators\PrimitivesReturnValsMethodVisitor$2.class
