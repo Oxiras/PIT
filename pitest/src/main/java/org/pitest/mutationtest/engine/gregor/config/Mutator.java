@@ -180,13 +180,14 @@ public final class Mutator {
         add("AOR2", AORMutator.MathMutator2.AOR_MUTATOR);
         add("AOR3", AORMutator.MathMutator3.AOR_MUTATOR);
         add("AOR4", AORMutator.MathMutator4.AOR_MUTATOR);
-        add("ROR1", RORMutator.RORMutator1.ROR_MUTATOR);
-        add("ROR2", RORMutator.RORMutator2.ROR_MUTATOR);
-        add("ROR3", RORMutator.RORMutator3.ROR_MUTATOR);
-        add("ROR4", RORMutator.RORMutator4.ROR_MUTATOR);
-        add("ROR5", RORMutator.RORMutator5.ROR_MUTATOR);
-        add("ROR6", RORMutator.RORMutator6.ROR_MUTATOR);
-
+        
+        add("ROR-NE", new RORMutator(RORMutator.Type.NE));
+        add("ROR-EQ", new RORMutator(RORMutator.Type.EQ));
+        add("ROR-GE", new RORMutator(RORMutator.Type.GE));
+        add("ROR-GT", new RORMutator(RORMutator.Type.GT));
+        add("ROR-LE", new RORMutator(RORMutator.Type.LE));
+        add("ROR-LT", new RORMutator(RORMutator.Type.LT));
+        
         addGroup("REMOVE_SWITCH", RemoveSwitchMutator.makeMutators());
         addGroup("DEFAULTS", defaults());
         addGroup("STRONGER", stronger());
@@ -199,12 +200,12 @@ public final class Mutator {
         return group(
                 AODMutator.AODMutator1.AOD_MUTATOR,
                 AODMutator.AODMutator2.AOD_MUTATOR,
-                RORMutator.RORMutator1.ROR_MUTATOR,
-                RORMutator.RORMutator2.ROR_MUTATOR,
-                RORMutator.RORMutator3.ROR_MUTATOR,
-                RORMutator.RORMutator4.ROR_MUTATOR,
-                RORMutator.RORMutator5.ROR_MUTATOR,
-                RORMutator.RORMutator6.ROR_MUTATOR,
+                new RORMutator(RORMutator.Type.NE),
+                new RORMutator(RORMutator.Type.EQ),
+                new RORMutator(RORMutator.Type.GE),
+                new RORMutator(RORMutator.Type.GT),
+                new RORMutator(RORMutator.Type.LE),
+                new RORMutator(RORMutator.Type.LT),
                 AORMutator.MathMutator1.AOR_MUTATOR,
                 AORMutator.MathMutator2.AOR_MUTATOR,
                 AORMutator.MathMutator3.AOR_MUTATOR,

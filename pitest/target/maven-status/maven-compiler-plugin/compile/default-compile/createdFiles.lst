@@ -21,17 +21,16 @@ org\pitest\mutationtest\engine\gregor\ClassContext.class
 org\pitest\mutationtest\engine\gregor\mutators\AORMutator$MathMutator1.class
 org\pitest\util\StreamUtil.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\ReturnValuesMutator$ReturnValuesMethodVisitor.class
-org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator5.class
 org\pitest\mutationtest\engine\gregor\mutators\AReturnMethodVisitor$3.class
 org\pitest\functional\SideEffect2.class
 org\pitest\junit\adapter\AdaptedJUnitTestUnit.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorGT.class
 org\pitest\bytecode\NullVisitor$1.class
 org\pitest\mutationtest\config\TestPluginArguments.class
 org\pitest\mutationtest\engine\gregor\GregorMutationEngine.class
 org\pitest\mutationtest\mocksupport\JavassistInputStreamInterceptorMethodVisitor.class
 org\pitest\mutationtest\build\PercentAndConstantTimeoutStrategy.class
 org\pitest\boot\HotSwapAgent.class
-org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor6.class
 org\pitest\mutationtest\engine\Mutant.class
 org\pitest\mutationtest\engine\gregor\mutators\RemoveConditionalMutator$Choice.class
 org\pitest\classinfo\FixedSizeHashMap.class
@@ -51,7 +50,6 @@ org\pitest\coverage\execute\DependencyFilter.class
 org\pitest\mutationtest\engine\gregor\mutators\IncrementsMutator.class
 org\pitest\coverage\ClassLine.class
 org\pitest\sequence\QueryParams.class
-org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator4.class
 org\pitest\plugin\FeatureParser.class
 org\pitest\util\PitError.class
 org\pitest\junit\JUnit4SuiteFinder.class
@@ -80,7 +78,6 @@ org\pitest\mutationtest\engine\gregor\mutators\PrimitivesReturnValsMethodVisitor
 org\pitest\mutationtest\engine\MutationEngine.class
 org\pitest\mutationtest\engine\gregor\mutators\EmptyObjectReturnValsMutator.class
 org\pitest\bytecode\FrameOptions.class
-org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor1.class
 org\pitest\coverage\analysis\AbstractCoverageStrategy.class
 org\pitest\mutationtest\engine\gregor\mutators\MathMethodVisitorC3.class
 org\pitest\sequence\SequenceQuery$Plus.class
@@ -94,10 +91,12 @@ org\pitest\mutationtest\engine\gregor\AbstractJumpMutator$Substitution.class
 org\pitest\classpath\IOHeavyRoot.class
 org\pitest\functional\predicate\And.class
 org\pitest\mutationtest\engine\gregor\LineTrackingMethodVisitor.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorLE.class
 org\pitest\sequence\Context.class
 org\pitest\junit\DescriptionFilter.class
 org\pitest\sequence\SequenceQuery$Concat.class
 org\pitest\testapi\execute\Pitest.class
+org\pitest\mutationtest\engine\gregor\mutators\RORMutator$Type.class
 org\pitest\testapi\execute\MultipleTestGroup.class
 org\pitest\testng\MutableTestListenerWrapper.class
 org\pitest\mutationtest\engine\gregor\mutators\AODMutator$AODMutator2.class
@@ -109,10 +108,11 @@ org\pitest\testapi\TestUnitFinder.class
 org\pitest\util\Id.class
 org\pitest\classinfo\CachingByteArraySource.class
 org\pitest\help\PitHelpError.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorGE.class
 org\pitest\mutationtest\engine\gregor\MutatingClassVisitor.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\NakedReceiverMutator$ReplaceMethodCallWithObjectVisitor.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorNE.class
 org\pitest\coverage\analysis\LineMapper.class
-org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator6.class
 org\pitest\mutationtest\engine\gregor\mutators\BooleanFalseReturnValsMutator.class
 org\pitest\mutationtest\engine\gregor\mutators\ConditionalsBoundaryMutator.class
 org\pitest\testapi\Configuration.class
@@ -195,7 +195,6 @@ org\pitest\testapi\TestPluginFactory.class
 org\pitest\sequence\SequenceQuery$Or.class
 org\pitest\mutationtest\engine\gregor\mutators\AReturnMethodVisitor$6.class
 org\pitest\mutationtest\engine\gregor\mutators\MathMethodVisitorC1.class
-org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor3.class
 org\pitest\classinfo\ClassName.class
 org\pitest\sequence\State.class
 org\pitest\util\ExitCode.class
@@ -207,7 +206,6 @@ org\pitest\testapi\TestListener.class
 org\pitest\testapi\TestUnit.class
 org\pitest\mutationtest\engine\gregor\mutators\VoidMethodCallMutator.class
 org\pitest\extension\common\TestUnitDecorator.class
-org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator2.class
 org\pitest\mutationtest\engine\gregor\mutators\ReturnValsMethodVisitor.class
 org\pitest\mutationtest\TimeoutLengthStrategy.class
 org\pitest\classinfo\ClassByteArraySource.class
@@ -224,6 +222,8 @@ org\pitest\mutationtest\UnviableClassMethodVisitor.class
 org\pitest\classinfo\DefaultClassPointer.class
 org\pitest\mutationtest\engine\gregor\AbstractJumpMutator.class
 org\pitest\mutationtest\engine\gregor\mutators\RemoveConditionalMutator$RemoveConditionalMethodVisitor.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorEQ.class
+org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitorLT.class
 org\pitest\dependency\DependencyExtractor.class
 org\pitest\mutationtest\engine\gregor\mutators\AReturnMethodVisitor$1.class
 org\pitest\util\Preconditions.class
@@ -240,7 +240,6 @@ org\pitest\mutationtest\engine\gregor\mutators\BooleanTrueMethodVisitor$1.class
 org\pitest\mutationtest\engine\gregor\mutators\MathMethodVisitorC2.class
 org\pitest\mutationtest\engine\gregor\mutators\AODMutator$AODMutator1.class
 org\pitest\coverage\execute\CoverageDecorator.class
-org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator3.class
 org\pitest\plugin\FeatureSelector.class
 org\pitest\coverage\analysis\CoverageAnalyser.class
 org\pitest\classpath\OtherClassLoaderClassPathRoot.class
@@ -274,7 +273,6 @@ org\pitest\testapi\execute\ResultType.class
 org\pitest\classinfo\ClassInfoVisitor$ClassAnnotationValueVisitor$1.class
 org\pitest\testng\TestNGConfiguration.class
 sun\pitest\InvokeReceiver.class
-org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor5.class
 org\pitest\util\StringUtil.class
 org\pitest\reflection\IsAnnotatedWith.class
 org\pitest\junit\adapter\AdaptingRunListener.class
@@ -282,7 +280,6 @@ org\pitest\testapi\execute\ExitingResultCollector.class
 org\pitest\functional\prelude\Prelude.class
 org\pitest\dependency\DependencyClassVisitor$DependencyAnalysisMethodVisitor.class
 org\pitest\mutationtest\engine\gregor\mutators\RemoveConditionalMutator.class
-org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor2.class
 org\pitest\util\Functions.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\MemberVariableMutator.class
 org\pitest\mutationtest\engine\gregor\mutators\InlineConstantMutator.class
@@ -316,14 +313,12 @@ org\pitest\dependency\DependencyAccess$Member.class
 org\pitest\mutationtest\engine\gregor\mutators\AReturnMethodVisitor$4.class
 org\pitest\mutationtest\execute\HotSwap.class
 org\pitest\sequence\Consume.class
-org\pitest\mutationtest\engine\gregor\mutators\RorMethodVisitor4.class
 org\pitest\mutationtest\execute\MutationTestWorker$1.class
 org\pitest\mutationtest\engine\MutationIdentifier.class
 org\pitest\testng\TestNGTestUnit.class
 org\pitest\coverage\execute\JavassistCoverageInterceptor.class
 org\pitest\mutationtest\execute\MutationTestMinion.class
 org\pitest\mutationtest\engine\gregor\mutators\experimental\SwitchMutator$SwitchMethodVisitor.class
-org\pitest\mutationtest\engine\gregor\mutators\RORMutator$RORMutator1.class
 org\pitest\util\PitError$1.class
 org\pitest\coverage\CoverageResult.class
 org\pitest\mutationtest\engine\gregor\mutators\AORMutator$MathMutator4.class
