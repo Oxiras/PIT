@@ -36,6 +36,7 @@ import org.pitest.mutationtest.engine.gregor.mutators.AORMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator;
+import org.pitest.mutationtest.engine.gregor.mutators.CRMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator;
@@ -174,6 +175,14 @@ public final class Mutator {
          * Experimental mutator that replaces method call with this
          */
         add("EXPERIMENTAL_NAKED_RECEIVER", NakedReceiverMutator.NAKED_RECEIVER);
+        
+        // RC 
+        add("RC-ADD", new CRMutator(CRMutator.MutantType.ADD));
+        add("RC-SUB", new CRMutator(CRMutator.MutantType.SUB));
+        add("RC-NEGATE", new CRMutator(CRMutator.MutantType.NEGATE));
+        add("RC-REPLACE_ONE", new CRMutator(CRMutator.MutantType.REPLACE_ONE));
+        add("RC-REPLACE_ZERO", new CRMutator(CRMutator.MutantType.REPLACE_ZERO));
+        
         // AOD
         add("AOD1", AODMutator.AODMutator1.AOD_MUTATOR);
         add("AOD2", AODMutator.AODMutator2.AOD_MUTATOR);
@@ -208,6 +217,11 @@ public final class Mutator {
 
     public static Collection<MethodMutatorFactory> augments() {
         return group(
+                new CRMutator(CRMutator.MutantType.ADD),
+                new CRMutator(CRMutator.MutantType.SUB),
+                new CRMutator(CRMutator.MutantType.NEGATE),
+                new CRMutator(CRMutator.MutantType.REPLACE_ONE),
+                new CRMutator(CRMutator.MutantType.REPLACE_ZERO),
                 AODMutator.AODMutator1.AOD_MUTATOR,
                 AODMutator.AODMutator2.AOD_MUTATOR,
                 new RORMutator(RORMutator.Type.NE),
