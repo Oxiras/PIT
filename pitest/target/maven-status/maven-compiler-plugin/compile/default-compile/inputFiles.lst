@@ -215,6 +215,7 @@ C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mu
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\execute\HotSwap.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\testapi\Configuration.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\reflection\IsAnnotatedWith.java
+C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\engine\gregor\mutators\UORMutator.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\coverage\LineMap.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\mutationtest\engine\gregor\MutationEngineConfiguration.java
 C:\Users\Oxiras.DEUS\eclipse-workspace\pitest\pitest\src\main\java\org\pitest\sequence\SlotRead.java

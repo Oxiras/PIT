@@ -51,6 +51,7 @@ import org.pitest.mutationtest.engine.gregor.mutators.RORMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator.Choice;
 import org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator;
+import org.pitest.mutationtest.engine.gregor.mutators.UORMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator;
 import org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator;
@@ -173,20 +174,30 @@ public final class Mutator {
          * Experimental mutator that replaces method call with this
          */
         add("EXPERIMENTAL_NAKED_RECEIVER", NakedReceiverMutator.NAKED_RECEIVER);
-        
+        // AOD
         add("AOD1", AODMutator.AODMutator1.AOD_MUTATOR);
         add("AOD2", AODMutator.AODMutator2.AOD_MUTATOR);
+        
+        // AOR
         add("AOR1", AORMutator.MathMutator1.AOR_MUTATOR);
         add("AOR2", AORMutator.MathMutator2.AOR_MUTATOR);
         add("AOR3", AORMutator.MathMutator3.AOR_MUTATOR);
         add("AOR4", AORMutator.MathMutator4.AOR_MUTATOR);
-        add("ROR1", RORMutator.RORMutator1.ROR_MUTATOR);
-        add("ROR2", RORMutator.RORMutator2.ROR_MUTATOR);
-        add("ROR3", RORMutator.RORMutator3.ROR_MUTATOR);
-        add("ROR4", RORMutator.RORMutator4.ROR_MUTATOR);
-        add("ROR5", RORMutator.RORMutator5.ROR_MUTATOR);
-        add("ROR6", RORMutator.RORMutator6.ROR_MUTATOR);
-
+        
+        // UOR
+        add("UOR-DECREMENT", new UORMutator(UORMutator.Type.DECREMENT));
+        add("UOR-INCREMENT", new UORMutator(UORMutator.Type.INCREMENT));
+        add("UOR-REVERSE", new UORMutator(UORMutator.Type.REVERSE));
+        add("UOR-REMOVE", new UORMutator(UORMutator.Type.REMOVE));
+        
+        // ROR
+        add("ROR-NE", new RORMutator(RORMutator.Type.NE));
+        add("ROR-EQ", new RORMutator(RORMutator.Type.EQ));
+        add("ROR-GE", new RORMutator(RORMutator.Type.GE));
+        add("ROR-GT", new RORMutator(RORMutator.Type.GT));
+        add("ROR-LE", new RORMutator(RORMutator.Type.LE));
+        add("ROR-LT", new RORMutator(RORMutator.Type.LT));
+        
         addGroup("REMOVE_SWITCH", RemoveSwitchMutator.makeMutators());
         addGroup("DEFAULTS", defaults());
         addGroup("STRONGER", stronger());
@@ -199,16 +210,20 @@ public final class Mutator {
         return group(
                 AODMutator.AODMutator1.AOD_MUTATOR,
                 AODMutator.AODMutator2.AOD_MUTATOR,
-                RORMutator.RORMutator1.ROR_MUTATOR,
-                RORMutator.RORMutator2.ROR_MUTATOR,
-                RORMutator.RORMutator3.ROR_MUTATOR,
-                RORMutator.RORMutator4.ROR_MUTATOR,
-                RORMutator.RORMutator5.ROR_MUTATOR,
-                RORMutator.RORMutator6.ROR_MUTATOR,
+                new RORMutator(RORMutator.Type.NE),
+                new RORMutator(RORMutator.Type.EQ),
+                new RORMutator(RORMutator.Type.GE),
+                new RORMutator(RORMutator.Type.GT),
+                new RORMutator(RORMutator.Type.LE),
+                new RORMutator(RORMutator.Type.LT),
                 AORMutator.MathMutator1.AOR_MUTATOR,
                 AORMutator.MathMutator2.AOR_MUTATOR,
                 AORMutator.MathMutator3.AOR_MUTATOR,
-                AORMutator.MathMutator4.AOR_MUTATOR
+                AORMutator.MathMutator4.AOR_MUTATOR,
+                new UORMutator(UORMutator.Type.DECREMENT),
+                new UORMutator(UORMutator.Type.INCREMENT),
+                new UORMutator(UORMutator.Type.REMOVE),
+                new UORMutator(UORMutator.Type.REVERSE)
                 );
     }
 
