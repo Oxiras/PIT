@@ -22,3 +22,9 @@ Running project with failed testcase
 6. Navigate to the sample project folder location.
 7. Run following command: mvn clean test -DskipTests
 8. Run following command: mvn org.pitest:pitest-maven:mutationCoverage.
+
+Run multiThread in mvn:
+1. Add this command in .bash_profile (MacOS) to run maven with 4 threads:
+    alias mvnp='mvn -T 4'
+2. Replace mvn by mvnp in any commands, such as:
+    mvnp org.pitest:pitest-maven:mutationCoverage
