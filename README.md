@@ -28,3 +28,10 @@ Run multiThread in mvn:
     alias mvnp='mvn -T 4'
 2. Replace mvn by mvnp in any commands, such as:
     mvnp org.pitest:pitest-maven:mutationCoverage
+
+Mutation can fig buggy!
+Our strategy for fixing buggy:
+1. Tracking methods called for every tests.
+2. Using fault localization and ranking by Tarantula to rank top suspicious methods.
+3. Generating only 1 mutant each time on one of the top- suspicious methods
+4. Re-run the test suit, if all test are passed, then terminating, else go back to step 3.
